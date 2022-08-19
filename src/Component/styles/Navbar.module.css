@@ -1,0 +1,82 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 8%;
+    font-size: 1rem;
+    gap: 1vw;
+    background-color: rgba(228, 149, 4, 0.897);
+    color: rgb(240, 232, 223);
+    font-weight: 700;
+}
+.navbar .srch{
+    display: flex;
+    gap: 2vw;
+}
+.navbar .srch ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    /* width: 25rem; */
+}
+.navbar .srchicon{
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: max-content;
+    background-color: rgb(192, 172, 133);
+    padding: 1% 2%;
+}
+.srchicon.act{
+    display: none;
+}
+.inact{
+    display: block;
+}
+.srchicon input{
+    border: none;
+    background-color: rgb(192, 172, 133);
+    font-size: 1.4rem;
+    max-width: 5rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.srchicon input:focus{
+    outline: 0;
+}
+.srchicon i{
+    background-color: rgb(192, 172, 133);
+    font-size: 1rem;
+    border-right: 1px solid black;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    min-height: 1.7rem;
+    /* padding-left: 5%; */
+    padding-top: 5%;
+    padding-right: 5%;
+}
+.active{
+    display: block;
+    animation-name: searching;
+    animation-duration: 0.1s;
+    animation-direction: normal;
+}
+.notactive{
+    display: none;
+}
+@keyframes searching{
+    0% {max-width: 2vw;}
+    10% {max-width: 4vw;}
+    20% {max-width: 6vw;}
+    30% {max-width: 8vw;}
+    40% {max-width: 10vw;}
+    50% {max-width: 11vw;}
+    60% {max-width: 12vw;}
+    70% {max-width: 13vw;}
+    80% {max-width: 14vw;}
+    90% {max-width: 15vw;}
+    100% {max-width: 17vw;}
+}
